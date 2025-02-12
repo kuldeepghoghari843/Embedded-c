@@ -1,0 +1,41 @@
+
+Structure in c 
+
+- comments
+  EXAMPLE :
+	/*.....*/
+
+
+- pre-process directives
+  EXAMPLE :
+	#include<…> or #define
+	#include<reg51.h>	
+
+	
+- Global Declaration Section:
+  EXAMPLE :
+        void delay (int);
+
+
+- Main function()
+
+
+  EXAMPLE :
+#include <stdio.h>
+
+struct myStructure {
+  int myNum;
+  char myLetter;
+};
+
+int main() {
+  struct myStru cture s1;
+
+  s1.myNum = 1311;
+  s1.myLetter = 'a';
+
+  printf("My number: %d\n", s1.myNum);
+  printf("My letter: %c\n", s1.myLetter);
+
+  return 0;
+}

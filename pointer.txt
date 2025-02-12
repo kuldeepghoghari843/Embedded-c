@@ -1,0 +1,33 @@
+POINTER 
+
+ A pointer is a variable that stores the memory address of another variable. Instead of holding a direct value, it holds the address where the value is stored in memory. There are 2 important operators that we will use in pointers concepts i.e.
+
+  - Dereferencing operator(*) used to declare pointer variable and access the value stored in the address.
+  - Address operator(&) used to returns the address of a variable or to access the address of a variable to a pointer.
+
+
+
+EXAMPLE
+
+
+#include <stdio.h>
+
+int main() {
+    
+    int a = 100;
+    int *ptr = &a;
+    
+    printf("the value of a is : %d\n" , a);
+    printf("the memory adrres of a is : %p\n" , &a);
+    printf("the memory address of a is using ptr : %p\n" , ptr);
+
+    return 0;
+}
+
+
+OUTPUT
+
+
+the value of a is : 100
+the memory adrres of a is : 0x7ffc2a79d994
+the memory address of a is using ptr : 0x7ffc2a79d994
