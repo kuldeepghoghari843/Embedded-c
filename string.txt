@@ -1,0 +1,29 @@
+
+STRING
+
+ - Strings are used for storing text/characters.
+ - Unlike many other programming languages, C does not have a String type to easily create string variables. 
+   Instead, you must use the char type and create an array of characters to make a string in C
+
+EXAMPLE 1:
+
+ char greetings[] = "Hello World!";
+ printf("%s", greetings);
+ 
+ OUTPUT : Hello World!
+
+
+EXAMPLE 2 :
+
+ char greetings[] = "Hello World!";
+ printf("%c", greetings[0]);
+
+ OUTPUT : H
+
+EXAMPLE 3 :
+
+ char greetings[] = "Hello World!";
+ greetings[0] = 'J';
+ printf("%s", greetings);
+
+ // Outputs Jello World! instead of Hello World!
